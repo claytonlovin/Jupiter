@@ -2,7 +2,7 @@
 library(shiny)
 library(shinydashboard)
 
-ui <- dashboardPage(skin = "purple",
+ui <- dashboardPage(skin = "black",
                     
     dashboardHeader(
         #Left header
@@ -47,13 +47,15 @@ ui <- dashboardPage(skin = "purple",
                                    min = "2017-01-01", max = "2020-07-31"),
                     fluidRow(
     
+                        infoBox("Usuários", value= 20, icon = icon("scale", lib = "glyphicon")),
+                        infoBoxOutput("progressBox"),
+                        infoBoxOutput("approvalBox3"),
+                        infoBoxOutput("approvalBox2")
                         
-                        box(
-                            title = "Controls",
-                            sliderInput("slider", "Number of observations:", 1, 100, 50)
-                            )
+                        
+                        
+
                     )
-                    
                 ),
             
             # Second tab content
@@ -71,14 +73,55 @@ ui <- dashboardPage(skin = "purple",
             font-weight: bold;
             font-size: 28px;
             
+          }, 
+          
+        '))),
+        
+        #CSS    
+        tags$body(tags$style(HTML('
+            @media (min-width: 768px){
+                 .col-sm-4{
+                    width: 24%;
+                }
+            }
            
-          }
-        ')))
+        '))),
+        
         )
 )
 
 
 
-server <- function(input, output) { }
+server <- function(input, output){ 
+    
+    output$progressBox <- renderInfoBox({
+        infoBox(
+            "Progress", paste0(value + input$count, "%"), icon = icon("list"),
+            color = "purple"
+        )
+    })
+    
+    output$progressBox <- renderInfoBox({
+        infoBox(
+            "Sessão", "90", icon = icon("thumbs-up", lib = "glyphicon"),
+            color = "yellow"
+          )
+        })
+    
+    output$approvalBox3 <- renderInfoBox({
+        infoBox(
+            "Rejeição", "60%", icon = icon("remove-sign", lib = "glyphicon"),
+            color = "red"
+        )
+    })
+    
+    output$approvalBox2 <- renderInfoBox({
+        infoBox(
+            "Transações", "R$ 80,00", icon = icon("piggy-bank", lib = "glyphicon"),
+            color = "blue"
+        )
+    })
+    
+    }
 
 shinyApp(ui, server)
