@@ -16,8 +16,8 @@ Obter mais acessibilidades sobre os dados de publicidade, definir como analisar 
 
 ## Bibliotecas utilizadas 
 
-[GoogleAnalytics](https://code.markedmondson.me/googleAnalyticsR/)
-[Shiny](https://shiny.rstudio.com/tutorial/)
+[GoogleAnalytics](https://code.markedmondson.me/googleAnalyticsR/)</br>
+[Shiny](https://shiny.rstudio.com/tutorial/)</br>
 [Brightdashboard](https://github.com/rstudio/shinydashboard)
 
 ## Autor
@@ -35,6 +35,6 @@ Obter mais acessibilidades sobre os dados de publicidade, definir como analisar 
 
 Este projeto esta sobe a licença [GPL V2](./LICENSE).
 
-Feito com ❤️ por Clayton Silva[Entre em contato!](https://www.linkedin.com/in/tgmarinho/)
+Feito com ❤️ por Clayton Silva[Entre em contato!](https://www.linkedin.com/in/clayttonsilva/)
 
 ---
