@@ -29,12 +29,9 @@ Obter mais acessibilidades sobre os dados de publicidade, definir como analisar 
 
 [![Linkedin Badge](https://img.shields.io/badge/-Clayton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/clayttonsilva/)](https://www.linkedin.com/in/clayttonsilva/) 
 
----
 
 ## Licença
 
 Este projeto esta sobe a licença [GPL V2](./LICENSE).
 
 Feito com ❤️ por Clayton Silva[Entre em contato!](https://www.linkedin.com/in/clayttonsilva/)
-
----
