@@ -1,11 +1,15 @@
-# Sobre o Projeto jupiter
+<h1 align="center">
+    <img alt="Jupiter" title="#JupiterAnalytics" src="./custom/apresentação.png" />
+</h1>
 
-Unifica dados de publicidade e vendas digitais. O sistema é construido sobbre a linguagem **R** e o framework **Shiny**. 
+## Sobre o Projeto jupiter
+
+Unifica dados de publicidade e vendas digitais. O sistema é construido sobre a linguagem **R** e o framework **Shiny**. 
 
 
 ## Objetivos
 
-Obter mais acessibilidades sobre os dados de publicidade, definir como analisar as métricas importantes para o negócios. Além de auonomia sobre aplicação de modelos de aprendizagem de máquinas.  
+Obter mais acessibilidades sobre os dados de publicidade, definir como analisar as métricas importantes para o negócio. Além de autonomia sobre aplicação de modelos de aprendizagem de máquinas.  
 
 
 ## Dados Obtidos
@@ -24,8 +28,7 @@ Obter mais acessibilidades sobre os dados de publicidade, definir como analisar 
 
 <a href="">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/57988870?s=400&u=da59b387aff98249243879ad0b02a4ed7cc29b49&v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Clayton Silva</b></sub></a> 
+</a>
 
 [![Linkedin Badge](https://img.shields.io/badge/-Clayton-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/clayttonsilva/)](https://www.linkedin.com/in/clayttonsilva/) 
 
