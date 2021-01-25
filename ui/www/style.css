@@ -1,0 +1,14 @@
+
+.main-header .logo {
+  font-weight: bold;
+  font-size: 24px
+}
+
+.info-box{
+  cursor: pointer;  
+}
+
+@media (min-width: 768px){
+.col-sm-4{
+    width: 24%
+}}
