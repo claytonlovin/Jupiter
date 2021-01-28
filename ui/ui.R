@@ -48,7 +48,7 @@ ui <- dashboardPage(skin = "black",
                                                min = "2017-01-01", max = "2020-07-31"),
                                 fluidRow(
                                   
-                                  infoBox("Usuários", value= 20, icon = icon("scale", lib = "glyphicon")),
+                                  infoBox("Usuários", value= users, icon = icon("scale", lib = "glyphicon")),
                                   infoBoxOutput("progressBox"),
                                   infoBoxOutput("approvalBox3"),
                                   infoBoxOutput("approvalBox2")
