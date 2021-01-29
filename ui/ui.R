@@ -28,10 +28,10 @@ ui <- dashboardPage(skin = "black",
                       width = 250,
                       sidebarMenu(
                         menuItem("Home", tabName = "dashboard", icon = icon("dashboard")),
-                        menuItem("Marketing", tabName = "widgets", icon = icon("paper-plane")),
-                        menuItem("Comportamento", tabName = "widgets", icon = icon("bicycle")),
-                        menuItem("Aquisição", tabName = "widgets", icon = icon("money")),
-                        menuItem("E-commerce", tabName = "widgets", icon = icon("shopping-basket"))
+                        menuItem("Marketing", tabName = "Marketing", icon = icon("paper-plane")),
+                        menuItem("Comportamento", tabName = "Comportamento", icon = icon("bicycle")),
+                        menuItem("Aquisição", tabName = "Aquisição", icon = icon("money")),
+                        menuItem("E-commerce", tabName = "E-commerce", icon = icon("shopping-basket"))
                       )
                     ),
                     
@@ -48,24 +48,43 @@ ui <- dashboardPage(skin = "black",
                                                min = "2017-01-01", max = "2020-07-31"),
                                 fluidRow(
                                   
-                                  infoBox("Usuários", value= users, icon = icon("scale", lib = "glyphicon")),
                                   infoBoxOutput("progressBox"),
+                                  infoBoxOutput("progressBox1"),
                                   infoBoxOutput("approvalBox3"),
-                                  infoBoxOutput("approvalBox2")
+                                  infoBoxOutput("approvalBox2"),
                                   
                                   
-                                  
+                                  tabBox(
+                                    title = "Engajamento",
+                                    # The id lets us use input$tabset1 on the server to find the current tab
+                                    id = "tabset1", height = "250px",
+                                    tabPanel("Tab1", "Beta1"),
+                                    tabPanel("Tab2", "Beta2")
+                                  )
                                   
                                 )
                         ),
                         
-                        # Second tab content
-                        tabItem(tabName = "widgets",
+                        # SEGUNDO ITEM
+                        tabItem(tabName = "Marketing",
                                 h2("Dashboard de marketing")
+                        ),
+                        # TERCEIRO ITEM
+                        tabItem(tabName = "Comportamento",
+                                h2("Dashboard de Comportamento")
+                        ),
+                        # QUARTO ITEM
+                        tabItem(tabName = "Aquisição",
+                                h2("Dashboard de Aquisição")
+                        ),
+                        # QUINTO ITEM
+                        tabItem(tabName = "E-commerce",
+                                h2("Dashboard de E-commerce")
                         )
                       ),
                       ##END PRINT CONTENT BODY
                       
+                      ### 
                       
                       
                       #CSS    
