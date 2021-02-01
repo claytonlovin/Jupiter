@@ -2,6 +2,7 @@
 library(shiny)
 library(shinydashboard)
 
+
 ui <- dashboardPage(skin = "black",
                     
                     dashboardHeader(
@@ -9,11 +10,11 @@ ui <- dashboardPage(skin = "black",
                       title = "Jupiter", titleWidth = 250,
                       
                       #Right Header
-                      dropdownMenu(type = "messages",
-                                   notificationItem(
-                                     text = "5 novas alterações",
-                                     icon("users")
-                                   )),
+                      #dropdownMenu(type = "messages",
+                            #       notificationItem(
+                                #     text = "5 novas alterações",
+                                 #    icon("users")
+                                   #)),
                       
                       dropdownMenu(type = "tasks",
                                    notificationItem(
@@ -25,6 +26,7 @@ ui <- dashboardPage(skin = "black",
                     
                     #DASHBOARD SIDEBAR
                     dashboardSidebar(
+                      
                       width = 250,
                       sidebarMenu(
                         menuItem("Home", tabName = "dashboard", icon = icon("dashboard")),
@@ -33,6 +35,7 @@ ui <- dashboardPage(skin = "black",
                         menuItem("Aquisição", tabName = "Aquisição", icon = icon("money")),
                         menuItem("E-commerce", tabName = "E-commerce", icon = icon("shopping-basket"))
                       )
+                     
                     ),
                     
                     #DASHBOARD BODY
@@ -44,8 +47,8 @@ ui <- dashboardPage(skin = "black",
                         tabItem(tabName = "dashboard",
                                 # SELECT DO PERÍODO
                                 # Select date range to be plotted
-                                dateRangeInput("date", strong("Período"), start = "2017-01-01", end = "2020-07-31",
-                                               min = "2017-01-01", max = "2020-07-31"),
+                                dateRangeInput("Data", strong("Período"), start = "2021-01-01", end = "2021-12-31",
+                                                language = "pt-br", format ="dd-mm-yyyy", separator = "a" ),
                                 fluidRow(
                                   
                                   infoBoxOutput("progressBox"),
@@ -58,8 +61,8 @@ ui <- dashboardPage(skin = "black",
                                     title = "Engajamento",
                                     # The id lets us use input$tabset1 on the server to find the current tab
                                     id = "tabset1", height = "250px",
-                                    tabPanel("Tab1", "Beta1"),
-                                    tabPanel("Tab2", "Beta2")
+                                    tabPanel("Mídia", "Beta1"),
+                                    tabPanel("Dispositivo", "Beta2")
                                   )
                                   
                                 )

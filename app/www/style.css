@@ -16,3 +16,10 @@
 .nav-tabs-custom{
   margin-top: 50px;
 }
+
+.info-box-number{
+  font-size: 26px;
+  color:#696969;
+}
+
+.shiny-server-account { display: none; }
